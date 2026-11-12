@@ -22,6 +22,13 @@ from 855 to 1,712 Elo; the dev floor is 1,154):
 - Trial 1: 1,464 Elo, 4.5/8 — wins over depth-2, depth-3, depth-4 and the
   nodes-250k engine, plus a draw against nodes-100k.
 
+## Round 4 revision
+
+The engine now also scores passed pawns (the house engines have no
+passed-pawn term), with a faster quiescence under budget pressure.
+Re-graded locally: trial 0 up to 1,253 Elo, trial 1 at 1,396 Elo,
+including a win over the nodes-2M house engine on trial 1.
+
 ## Layout
 
 - main.py — the entrypoint described above
